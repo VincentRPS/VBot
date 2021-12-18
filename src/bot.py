@@ -21,7 +21,7 @@ for cog in load.glob("cogs/*.py"):
 async def on_ready():
     _log.info("Bot is now ready.")
 
-@command(description="The Ping of the bot")
+@command(description="The Ping of the bot") # tempoary until i get a way to load cogs.
 async def ping(ctx: MessageContext):
     await ctx.send("Pong!")
 
